@@ -1,0 +1,585 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900");
+
+/* RESETS
+=========================================== */
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 20px 0;
+  padding: 0 20px;
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+  color: #202020;
+  background-color: #fbfbfb;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* POKEMON APP
+=========================================== */
+.container {
+  display: flex;
+  height: 660px;
+
+  max-width: 660px;
+  margin-left: 193px;
+
+  justify-content: space-between;
+  position: relative;
+
+  background: #f4f4f4 0% 0% no-repeat padding-box;
+  border-radius: 50px 50px 0px 0px;
+  opacity: 1;
+}
+
+.container .scroll {
+  display: flex;
+  max-width: 900px;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 620px;
+  height: 470px;
+
+  margin-top: 180px;
+  position: absolute;
+
+  overflow-y: scroll;
+}
+
+.container .scroll::-webkit-scrollbar {
+  width: 12px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 9px;
+  opacity: 1;
+}
+
+.container .scroll::-webkit-scrollbar-thumb {
+  background: #dbdbdb 0% 0% no-repeat padding-box;
+  border-radius: 6px;
+  opacity: 1;
+}
+
+.container .infoDex {
+  margin-top: 30px;
+  margin-left: 40px;
+
+  height: 150px;
+}
+
+.container .infoDex h2 {
+  font: normal normal bold 14px/19px Roboto;
+
+  color: #00a7fd;
+}
+
+.container .info__dex h1 {
+  text-align: left;
+  font: normal normal bold 35px/46px Roboto;
+
+  color: #333333;
+  opacity: 1;
+}
+
+.container .info__dex h2 {
+  text-align: left;
+  font: normal normal bold 14px/19px Roboto;
+  letter-spacing: 0px;
+  color: #00a7fd;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+
+.container p {
+  margin: 0;
+}
+
+.container .pokemon {
+  width: 40%;
+  background-color: white;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 1.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  overflow: hidden;
+
+  display: flex;
+
+  margin-top: 20px;
+  margin-left: 29px;
+  margin-right: 29px;
+  margin-bottom: 5px;
+}
+
+.container .pokemonName {
+  text-align: center;
+  padding: 10px;
+}
+.container .pokemonContainerType {
+  display: flex;
+  gap: 7px;
+}
+.container .pokemonNumber {
+  margin-top: 14px;
+  margin-left: 29px;
+
+  font: normal normal normal 12px/16px Roboto;
+
+  color: #939393;
+  opacity: 1;
+}
+
+.container .pokemonTypes {
+  text-align: left;
+  font: normal normal normal 12px/16px Roboto;
+  letter-spacing: 0px;
+  color: #939393;
+  opacity: 1;
+}
+.container .pokemonName p {
+  top: 196px;
+  left: 410px;
+  width: 100%;
+  height: 21px;
+  text-align: left;
+  font: normal normal bold 16px/21px Roboto;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+
+.container .pokemonImage {
+  align-items: center;
+  justify-content: center;
+}
+
+.container .pokemonImage img {
+  width: 75px;
+  height: 75px;
+
+  margin-top: 6px;
+  margin-left: 5px;
+
+  border: 1px solid #dbdbdb;
+  border-radius: 14px;
+  opacity: 1;
+}
+
+.container .pokemonMeta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 0 10px;
+
+  width: 54px;
+  height: 19px;
+
+  background: #662c91 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+
+  top: 240px;
+  left: 425px;
+
+  height: 19px;
+
+  text-align: left;
+  font: normal normal bold 14px/19px Roboto;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+/* POKEMON APP
+=========================================== */
+
+.container .filter {
+  width: 429px;
+  height: 500px;
+
+  margin-top: 100px;
+  margin-left: 52px;
+
+  background: #f4f4f4 0% 0% no-repeat padding-box;
+  border-radius: 50px 0px 0px 50px;
+  opacity: 1;
+
+  position: absolute;
+}
+
+.container .filter h1 {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.container .cpTotal {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  height: 15px;
+  margin-top: 23px;
+}
+
+.container .cpTotal h6 {
+  border: 2px solid #dbdbdb;
+  border-radius: 10px;
+  height: 34px;
+  width: 77px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 16px;
+}
+
+.container .slide {
+  height: 46px;
+}
+
+.container .sliderMui {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .infoSlide {
+  font: normal normal normal 14px/19px Roboto;
+  letter-spacing: 0px;
+  color: #939393;
+  margin-left: 44px;
+  height: 5px;
+}
+
+.container .elemental {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+
+  padding: 0px 37px;
+}
+
+.container .check {
+  display: flex;
+
+  width: 80px;
+}
+
+input[type="checkbox"].checkbox1:checked + span {
+  font: normal normal bold 16px/21px Roboto;
+  color: #00a7fd;
+  text-shadow: 0px 0px 6px #00c1fd66;
+}
+
+.checkbox1 {
+  cursor: pointer;
+  margin-top: 9px;
+}
+
+/*MENU 
+===========================================*/
+.navbar {
+  position: absolute;
+  margin-top: 100px;
+  height: 323px;
+  border-radius: 0px 50px 50px 0px;
+
+  color: #939393;
+  background: #f4f4f4 0% 0% no-repeat padding-box;
+  padding: 20px;
+  font: normal normal normal 16px/21px Roboto;
+
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+.navbar:hover {
+  padding-right: 130px;
+}
+
+.navbar a {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.navbar a span {
+  position: absolute;
+  width: 190px;
+
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  text-align: left;
+}
+
+.navbar:hover a span {
+  opacity: 1;
+  left: 0px;
+  margin-left: 50px;
+}
+
+.navbar img {
+  width: 20px;
+}
+
+.navbar .fundo {
+  width: 40px;
+  margin-left: -8px;
+}
+
+.navbar .lista {
+  position: absolute;
+  margin-left: -30px;
+  margin-top: 12px;
+}
+
+.navbar .listaSpan {
+  margin-top: 10px;
+  position: absolute;
+}
+
+.navbar a:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.active {
+  color: #00a7fd;
+  font: normal normal bold 16px/21px;
+}
+
+.navbar .voltbrasSpan {
+  font: normal normal bold 16px/21px Roboto;
+  color: black;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    margin: 0;
+    padding: 0;
+
+    margin-top: 418px;
+    margin-left: 300px;
+  }
+
+  .navbar {
+    margin-top: -359px;
+    margin-left: 321px;
+    border-radius: 34px;
+  }
+
+  .container .scroll {
+    width: 630px;
+  }
+  .container .pokemon {
+    width: 251px;
+  }
+
+  .container .filter {
+    width: 386px;
+    margin-left: -400px;
+    margin-top: -414px;
+    height: 403px;
+  }
+
+  .container .slide {
+    height: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    margin-left: 178px;
+    margin-top: 418px;
+  }
+
+  .navbar {
+    margin-top: -359px;
+    margin-left: 184px;
+    border-radius: 34px;
+  }
+
+  .container .scroll {
+    width: 630px;
+  }
+  .container .pokemon {
+    width: 251px;
+  }
+
+  .container .filter {
+    width: 386px;
+    margin-left: -384px;
+    margin-top: -414px;
+    height: 403px;
+  }
+
+  .container .slide {
+    height: 20px;
+  }
+}
+
+@media (max-width: 812px) {
+  .container {
+    margin-left: 48px;
+    margin-top: 418px;
+  }
+
+  .navbar {
+    margin-top: -389px;
+    margin-left: 58px;
+  }
+
+  .container .slide {
+    height: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    margin-left: 68px;
+    margin-top: 418px;
+  }
+
+  .navbar {
+    display: block;
+    margin-top: -395px;
+    margin-left: 74px;
+    border-radius: 34px;
+  }
+
+  .container .scroll {
+    width: 630px;
+  }
+
+  .container .pokemon {
+    width: 251px;
+  }
+
+  .container .filter {
+    width: 386px;
+    margin-left: -384px;
+    margin-top: -414px;
+    height: 403px;
+  }
+
+  .container .slide {
+    height: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    margin-left: -11px;
+  }
+
+  .navbar {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 568px) {
+  .container {
+    padding: 0;
+    margin: 0;
+    height: 527px;
+    margin-left: 82px;
+    margin-right: 77px;
+    border-radius: 50px 50px 50px 50px;
+  }
+
+  .container .scroll {
+    width: 299px;
+    height: 377px;
+    margin-top: 135px;
+    margin-left: 20px;
+  }
+
+  .container .filter {
+    margin-top: 540px;
+    margin-left: -377px;
+    border-radius: 50px 50px 50px 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    height: 527px;
+    margin-top: -22px;
+    margin-left: 37px;
+    margin-right: 20px;
+    border-radius: 50px 50px 50px 50px;
+  }
+
+  .container .scroll {
+    width: 299px;
+    height: 377px;
+    margin-top: 135px;
+    margin-left: 21px;
+  }
+
+  .container .filter {
+    margin-top: 540px;
+    margin-left: -379px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    margin-left: 13px;
+  }
+
+  .container .scroll {
+    height: 346px;
+    margin-top: 157px;
+    margin-left: 0px;
+  }
+  .container .filter {
+    margin-left: -349px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    margin-left: -43px;
+    margin-right: -54px;
+  }
+
+  .container .infoDex {
+    height: 160px;
+  }
+
+  .container .scroll {
+    margin-top: 186px;
+    margin-left: 21px;
+    height: 315px;
+  }
+
+  .container .filter {
+    margin-left: -381px;
+  }
+}
