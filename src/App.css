@@ -387,6 +387,19 @@ input[type="checkbox"].checkbox1:checked + span {
     margin-left: 300px;
   }
 
+  .container .filter h1 {
+    margin-top: 5px;
+  }
+
+  .container .cpTotal {
+    height: 7px;
+    margin-top: 14px;
+  }
+
+  .container .elemental {
+    gap: 9px;
+  }
+
   .navbar {
     margin-top: -359px;
     margin-left: 321px;
@@ -396,6 +409,7 @@ input[type="checkbox"].checkbox1:checked + span {
   .container .scroll {
     width: 630px;
   }
+
   .container .pokemon {
     width: 251px;
   }
