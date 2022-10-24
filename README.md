@@ -1,6 +1,6 @@
 ## Aplicativo Pokémon React, Apollo, MUI
 
-Este aplicativo (um aplicativo Pokemon) foi construído usando create-react-app como base, e as tecnologias utilizadas foram ReactJs, Apollo e a biblioteca MUI.
+Este aplicativo (um aplicativo Pokemon) foi construído usando create-react-app como base, e as tecnologias utilizadas foram ReactJs, Apollo e biblioteca MUI.
 
 <p align="center">
    <img src="https://media.giphy.com/media/IQebREsGFRXmo/giphy.gif" alt="Podcastr" width="150"/>
